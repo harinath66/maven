@@ -33,6 +33,19 @@
       <url>file:///tmp/maven-project-site</url>
     </site>
   </distributionManagement>
+         
+   <distributionManagement>
+        <repository>
+          <id>nexus</id>
+          <name>Tech Releases Nexus Repository</name>
+          <url>http://52.23.241.67:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+          <id>nexus</id>
+          <name>Snapshot Nexus Repository </name>
+          <url>http://52.23.241.67:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
   <build>
     <plugins>
